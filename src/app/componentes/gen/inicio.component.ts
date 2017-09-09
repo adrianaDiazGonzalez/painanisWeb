@@ -6,7 +6,7 @@
  * 
  * Modificaciones:
  * <Quien modifico:> <Cuando modifico:> <Donde modifico:>
- * Ejemplo: Alejandro Estrada 09/09/2017 In-25 Fn-30
+ * Ejemplo: Alejandro Estrada 09/09/2017 In-20 Fn-22
  */
 import { Component } from '@angular/core';
 
