@@ -17,7 +17,13 @@ import { Component } from '@angular/core';
 
 export class InicioComponent{
 
-    /* Describe que modificaste */
+    private usuario:string;
+    private contrasena:string;
 
+    /* Describe que modificaste */
+    constructor(){
+        this.usuario = "Alex";
+        this.contrasena = "1234";
+    }
     /* Fin */
 }
