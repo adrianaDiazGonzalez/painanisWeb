@@ -21,9 +21,16 @@ export class InicioComponent{
     private contrasena:string;
 
     /* Describe que modificaste */
-    constructor(){
-        this.usuario = "Alex";
-        this.contrasena = "1234";
+    valida(){
+
+        console.log(this.usuario);
+        console.log(this.contrasena);
+
+        if(this.usuario != "" && this.contrasena != ""){
+            console.log("Realizo algo");
+        }
+
     }
     /* Fin */
+
 }

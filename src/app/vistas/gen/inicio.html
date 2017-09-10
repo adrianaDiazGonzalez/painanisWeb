@@ -8,7 +8,7 @@
                 <img class="img-fluid" src="./assets/imagen/logo/logofinalXL-01.jpg">
             </div>
             <div style="background-color: #FFFFFF">
-                <form action="#">
+                <form>
                     <div class="form-group">
                         <label class="d-flex justify-content-center" for="inputUsuario">Usuario</label>
                         <input type="text" [(ngModel)]="usuario"  [ngModelOptions]="{standalone: true}" 
@@ -19,7 +19,7 @@
                         <input type="password" [(ngModel)]="contrasena" [ngModelOptions]="{standalone: true}" 
                             class="form-control" id="inputPassword" placeholder="Contraseña" />
                     </div>
-                    <button type="submit" class="btn btn-primary">Ingresar</button>
+                    <button (click)="valida()" class="btn btn-primary">Ingresar</button>
                 </form>
             </div>
         </div>
