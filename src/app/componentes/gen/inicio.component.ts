@@ -20,11 +20,7 @@ export class InicioComponent{
 
     private usuario:string;
     private contrasena:string;
-    private url:Conexion;
-
-    ngOnInit(){
-        this.url = new Conexion();
-    }
+    private url:Conexion = new Conexion();
 
     /* Describe que modificaste */
     valida(){
