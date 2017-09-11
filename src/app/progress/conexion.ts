@@ -11,4 +11,5 @@
 
  export class Conexion{
     cURL:string = "http://192.168.2.153:8810/Painanis/rest/painanis/";
+
  }

@@ -22,6 +22,10 @@ export class InicioComponent{
     private contrasena:string;
     private url:Conexion;
 
+    ngOnInit(){
+        this.url = new Conexion();
+    }
+
     /* Describe que modificaste */
     valida(){
 
