@@ -10,6 +10,11 @@
  */
 
  export class Conexion{
-    cURL:string = "http://192.168.2.153:8810/Painanis/rest/painanis/";
+    private cURL:string = "http://192.168.2.153:8810/Painanis/rest/painanis/";
 
+    /* Se crea una propiedad publica */
+    public get URL():string{
+        return this.cURL;
+    }
+    /* Fin */
  }

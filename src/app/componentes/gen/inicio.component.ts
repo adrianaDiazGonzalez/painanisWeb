@@ -30,7 +30,7 @@ export class InicioComponent{
 
         if(this.usuario != "" && this.contrasena != ""){
             console.log("Realizo algo");
-            console.log(this.url.cURL);
+            console.log(this.url.URL);
         }
 
     }
