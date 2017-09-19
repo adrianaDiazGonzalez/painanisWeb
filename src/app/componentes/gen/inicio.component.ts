@@ -9,28 +9,33 @@
  * Ejemplo: Alejandro Estrada 09/09/2017 In-20 Fn-22
  */
 import { Component } from '@angular/core';
-import { Conexion }  from '../../progress/conexion';
+import { Conexion } from '../../progress/conexion';
+import swal from 'sweetalert2';
 
 @Component({
     selector: 'Inicio',
     templateUrl: '../../vistas/gen/inicio.html'
 })
 
-export class InicioComponent{
+export class InicioComponent {
 
-    private usuario:string;
-    private contrasena:string;
-    private url:Conexion = new Conexion();
+    private usuario: string;
+    private contrasena: string;
+    private url: Conexion = new Conexion();
+
 
     /* Describe que modificaste */
-    valida(){
+    valida() {
 
-        console.log(this.usuario);
-        console.log(this.contrasena);
-
-        if(this.usuario != "" && this.contrasena != ""){
-            console.log("Realizo algo");
-            console.log(this.url.URL);
+        if ((this.usuario == "" || this.usuario == null) && (this.contrasena == "" || this.contrasena == null)) {
+            swal('Oops...', 'Ingresa tu usuario y contraseña', 'error');
+            return;
+        } else if (this.usuario == "" || this.usuario == null) {
+            swal('Oops...', 'Ingresa tu usuario', 'error');
+            return;
+        } else if (this.contrasena == "" || this.contrasena == null) {
+            swal('Oops...', 'Ingresa tu contraseña', 'error');
+            return;
         }
 
     }
