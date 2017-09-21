@@ -6,7 +6,7 @@
  * 
  * Modificaciones:
  * <Quien modifico:> <Cuando modifico:> <Donde modifico:>
- * Ejemplo: Alejandro Estrada 09/09/2017 In-20 Fn-22
+ * Ejemplo: Alejandro Estrada 09/09/2017 In-15 Fn-19
  */
 
  export class Conexion{
