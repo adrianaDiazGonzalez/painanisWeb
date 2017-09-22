@@ -9,6 +9,7 @@
  * Ejemplo: Alejandro Estrada 09/09/2017 In-20 Fn-22
  */
 import { Component } from '@angular/core';
+import { Router } from "@angular/router";
 import swal from 'sweetalert2';
 
 import { UsuarioModel } from '../../modelos/sg/usuario.model';
@@ -23,7 +24,7 @@ import { Conexion } from '../../progress/conexion';
 
 export class InicioComponent {
 
-    constructor(private usuarioModel: UsuarioModel, private sesionService: SesionService) { }
+    constructor(private router: Router, private usuarioModel: UsuarioModel, private sesionService: SesionService) { }
 
     /* Describe que modificaste */
     valida() {
@@ -47,6 +48,9 @@ export class InicioComponent {
                         swal('Oops...', 'Usuario y/o contraseña incorrectos', 'error');
                         return;
                     }
+
+                    this.router.navigate(["index"]);
+
                 }, error => {
                     swal('Oops...', 'Algo salio mal, intentalo más tarde', 'error');
                 });
